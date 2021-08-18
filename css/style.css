@@ -1,0 +1,73 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(181,181,181);
+    background: radial-gradient(circle, rgba(181,181,181,1) 0%, rgba(74,74,74,1) 100%);
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Title */
+.title h1 {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 6rem;
+    text-align: center;
+    color: #3662ff;
+    text-shadow:0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.35);
+    margin: 0 0 0.5rem 0;
+}
+
+/* Game Board */
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#game-board {
+    background-color: #fff;
+    background-image: url(../img/gameboard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    width: 70vmin;
+    height: 70vmin;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+    box-shadow:
+    0.25em 0.25em 0.75em rgba(0,0,0,.25),
+    0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    border: solid 1px #000;
+}
+
+.snake {
+    background-color: #3662ff;
+    border: .25vmin solid black;
+    box-shadow: 1px 1px #000;
+}
+
+.food {
+    background-color: #f20216;
+    border: .25vmin solid black;
+    box-shadow: 2px 2px #000;
+    border-radius: 100%;
+}
+
+/* Score */
+.score-container h3 {
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    color: #3662ff;
+    text-shadow:0px 1px 0px #000,
+    0px 14px 10px rgba(0,0,0,0.35);
+    font-size: 2rem;
+}
