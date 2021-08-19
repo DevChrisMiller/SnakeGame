@@ -32,7 +32,7 @@ function main(currentTime) {
         GOSound.play();
         alertify.confirm('Game Over!', 'Your Score: ' + currentScore + '<br><br>Play Again?',
         function(){ 
-            location.reload();
+            window.location.reload();
          },
          function(){
             return;
