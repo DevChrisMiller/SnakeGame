@@ -1,2 +1,2 @@
 # SnakeGame
-The classic Snake Game created only using HTML, CSS, and JS. A little bit of DOM manipulation is used to project the score to the screen and CSS grid is used for the gameboard. The speed of the snake and expansion rate when eating the food can be changed by simply changing the value of one variable in the code. Sound effects are also incorporated when eating food and when the game is over.
+The classic Snake Game created only using HTML, CSS, and JS. The speed of the snake and expansion rate when eating the food can be changed by simply changing the value of either the snakeSpeed or expansionRate variables in the game.js file. Sound effects are also incorporated when eating food and when the game is over.
